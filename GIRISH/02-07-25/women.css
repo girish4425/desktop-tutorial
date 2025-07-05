@@ -1,0 +1,51 @@
+.container {
+  display: flex;              
+  flex-wrap: wrap;            
+  gap: 20px;
+  padding: 20px;
+  margin: 30px;
+}
+
+.product {
+  background-color: white;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform-origin: center center;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+.product figure {
+  margin: 0;
+  padding: 10px;
+}
+
+.product img.image {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.product figcaption {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.product figcaption a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.product figcaption a:hover {
+  text-decoration: underline;
+}
